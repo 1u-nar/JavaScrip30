@@ -1,0 +1,44 @@
+html {
+  font-size: 10px;
+}
+
+body, html{
+  margin: 0;
+  padding: 0;
+}
+
+#drum-kit{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('bg1.jpg') ;
+  background-position: center;
+  background-size: cover;
+}
+
+.btn-container {
+  display: grid;
+  grid-template: repeat(3, minmax(100px, 110px)) / repeat(3, minmax(100px, 110px));
+  gap: 10px;
+}
+
+.btn {
+  color: white;
+  background-color: rgba(10%, 10%, 10%, 50%);
+
+  border: white 3px solid;
+  border-radius: 15px;
+    
+  height: 100px;
+  width: 100px;
+  padding: 8px;
+
+  cursor: pointer;
+  transition: 0.05s;
+
+}
+
+.btn:active, .active {
+  transform: scale(1.1);
+}
