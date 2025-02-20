@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="./style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="video-player-Container">
+      <div class="video-container">
+        <video width="auto" height="auto" volume>
+          <source src="./video.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="video-controllers-container">
+        <button name="toggle">|></button>
+        <input type="range" name="time">
+        <button name="speed">1x</button>
+        <input type="range" name="volume" min="0" max="100">
+        <button name="go-back"><< 10s</button>
+        <button name="go-foward">25s >></button>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

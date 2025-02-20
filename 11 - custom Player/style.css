@@ -1,0 +1,108 @@
+html, body {
+  margin : 0;
+  padding : 0;
+}
+
+html {
+  background: aquamarine;
+
+  height: 100vh;
+  width: 100vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-player-container, 
+.video-container,
+.video-controllers-container{
+  display: flex;
+  direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.video-container{
+  cursor: pointer;
+}
+
+.video-controllers-container{
+  margin: 6px 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button{
+  background: rgba(0,0,0, 0.5);
+  color: white;
+  border: 0;
+  border-radius: 3px;
+  padding: 6px;
+  cursor: pointer;
+  margin:0;
+  box-sizing: border-box;
+}
+
+button[name="toggle"]{
+  width: 30px;
+}
+
+button[name="speed"]{
+  width: 40px;
+}
+
+input[type="range"] {
+  -webkit-appearance: none; 
+  appearance: none; 
+  background: rgba(0, 0, 0, 0.6); 
+  color: white;
+  border: none;
+  border-radius: 3px;
+  height: 8px;
+  cursor: pointer;
+  margin: 0;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 6px;
+  margin-top: -12px;
+  border-radius: 3px;
+}
+
+input[type="range"]::-moz-range-track {
+  height: 6px;
+  border-radius: 3px;
+}
+
+input[type="range"]::-moz-range-progress {
+  background: #4CAF50;}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #333;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #333;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+input[name="volume"]{
+  width: 100px;
+}
+
+input[name="time"]{
+  width: 45%;
+}
